@@ -1,0 +1,6 @@
+confluent-kafka
+avro-python3
+flask
+gunicorn
+requests
+faker

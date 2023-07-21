@@ -1,0 +1,13 @@
+{
+  "name": "redis-sink",
+  "config": {
+    "connector.class": "com.github.jcustenborder.kafka.connect.redis.RedisSinkConnector",
+    "tasks.max": "1",
+    "topics": "to-replicate",
+    "key.converter": "org.apache.kafka.connect.storage.StringConverter",
+    "value.converter": "org.apache.kafka.connect.converters.ByteArrayConverter",
+    "value.converter.schemas.enable": "false",
+    "redis.hosts": "redis:6379",
+    "redis.database": "0"
+  }
+}
